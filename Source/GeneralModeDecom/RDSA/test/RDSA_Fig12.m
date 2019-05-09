@@ -5,7 +5,7 @@
 
 if (1)
     close all;
-    clear all;
+    clearvars;
     %% generate signal
     load 0009_8min.mat;
     N = 2^16;%17;
@@ -133,7 +133,7 @@ if (1)
         title('remove');axis square;
         set(gca, 'FontSize', 32);
         b=get(gca);
-        set(b.XLabel, 'FontSize', 32);set(b.YLabel, 'FontS2^{15}ize', 32);set(b.ZLabel, 'FontSize', 32);set(b.Title, 'FontSize', 32);
+        set(b.XLabel, 'FontSize', 32);set(b.YLabel, 'FontSize', 32);set(b.ZLabel, 'FontSize', 32);set(b.Title, 'FontSize', 32);
         tit = sprintf('./results/RDSA_fig10_%d_shapeSn_%d.fig',cnt1,1);
         saveas(pic,tit);
         str = sprintf('./results/RDSA_fig10_%d_shapeSn_%d',cnt1,1);
